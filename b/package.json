@@ -1,0 +1,29 @@
+{
+  "name": "expressjs-basic",
+  "version": "1.0.0",
+  "description": "ExpressJS code challenge",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn tsc",
+    "startdistr": "pm2 start ./dist/server.js -i max",
+    "stopdistr": "pm2 stop server",
+    "postinstall": "yarn build",
+    "start": "node ./dist/server.js",
+    "watch-node": "nodemon dist/server.js",
+    "watch-ts": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabor Rendes",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "exponential-backoff": "^3.1.1",
+    "express": "^4.18.2",
+    "pm2": "^5.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.0.3",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "target": "es2017",
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "alwaysStrict": true,
+        "noUnusedLocals": true /* Report errors on unused locals. */,
+        "noUnusedParameters": true /* Report errors on unused parameters. */,
+        "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
+        "useUnknownInCatchVariables": false, // override strict's default
+        "pretty": true,
+        "strict": true,
+        "declaration": false,
+        "removeComments": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "skipLibCheck": true,
+        "strictPropertyInitialization": false
+    },
+    "exclude": ["node_modules"],
+    "include": ["src/**/*", "babel.config.js"]
+}
